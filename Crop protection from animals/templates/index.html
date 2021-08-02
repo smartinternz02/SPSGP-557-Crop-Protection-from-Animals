@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <title>Protect your crops from animals</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <style>
+      
+     #navHeading{
+         position: relative;
+         left: 49%;
+         transform: translatex(-50%);
+         padding-Left: 100px;
+         font-family: 'Lora', serif;
+         font-size: 175%; 
+         font-weight: 500;
+        
+     }
+  
+     body{
+     font-family: 'Lora', serif;
+     }
+	img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 35%
+	}
+	.h2{
+	color : "red";
+	
+	}
+	/* Split the screen in half */
+	.split {
+	  height: 100%;
+	  width: 50%;
+	  margin-top: 5%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 0;
+	  overflow-x: hidden;
+	  padding-top: 10px;
+	}
+
+	/* Control the left side */
+	.left {
+	  left: 0;
+	 
+	  background-color: white;
+	}
+
+	/* Control the right side */
+	.right {
+	  right: 0;
+	  background-color: white;
+	  padding-right:30px;
+	}
+
+	/* If you want the content centered horizontally and vertically */
+	.centered {
+	  position: absolute;
+	  top: 40%;
+	  left: 40%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	/* Style the image inside the centered container, if needed */
+	.centered img {
+	  display: block;
+	  margin-left: auto;
+  	  margin-right: auto;
+	  width: 170%
+	}
+	.header {	
+			top:0;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background: #074404;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding: 15px;
+			font-size: 2.25vw;
+			width: 100%;
+			padding-left:80px;
+			text-align: left;
+		}
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-light" style="background-color: #96BB7C;">
+  <div class="container-fluid">
+    <span id="navHeading" class="navbar-brand navbar-center mb-0 h1">Crop Protection From Animals</span>
+  </div>
+</nav>
+	
+	<div class="split left">
+	<div class="centered">
+		
+			<img id="bg" class="center" src="{{ url_for('video_feed') }}">
+			<!img id="bg" class="center" src="samp.png">
+            
+   
+		</div>
+	</div>
+	
+	<div class="split right">
+		<div class="centered" style="top:35%; left:40%;padding-left:18%; padding-right:0.5%; left:40%; width:100%">
+			<h1 style="font-size:40px;color:#C64756;">Alert System for Crop Protection</h1>
+			<p style="font-size:25px; color:#41444B;">India ranks second worldwide in farm outputs. Indian agriculture playes a major role in food plant and medicinal plant production. But there is high risk of animals attacking the field. In an year, approximately 20,000 hectars of crop damage is caused by animals. To avoid this scenario, this system helps you monitoring the farm in your absence and alerts on any kind of animal detected.</p>
+			<p style="color:#C64756;font-size:30px">Jai Jawan - Jai Kisan</p>
+		</div>
+		
+	
+	</div>
+	
+	
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+  
+</html>
